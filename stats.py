@@ -12,3 +12,12 @@ def num_of_char(file_contents):
         else:
             dict[c] = 1
     return dict
+
+def pretty_num_of_char(file_contents):
+    counts = num_of_char(file_contents)
+    result = sorted([{"char": char, "num": num} for char, num in counts.items() if char.isalpha()], key=lambda dict: dict["num"], reverse=True)
+#    result = []
+#    for char, num in counts.items():
+#        result.append({"char": char, "num": num})
+#    result.sort(key=lambda dict: dict["num"], reverse=True)
+    return result
