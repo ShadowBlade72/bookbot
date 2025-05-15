@@ -20,7 +20,8 @@ def main():
     pretty_num_char = pretty_num_of_char(get_book_text("books/frankenstein.txt"))
     for char in pretty_num_char:
 #        if char["char"].isalpha():
-         print(f'{char["char"]}: {char["num"]}')
-#         pass
+#        print(f"{char}")
+        print(f'{char["char"]}: {char["num"]}')
+        pass
 
 main()
