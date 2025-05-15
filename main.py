@@ -22,6 +22,6 @@ def main():
 #        if char["char"].isalpha():
 #        print(f"{char}")
         print(f'{char["char"]}: {char["num"]}')
-        pass
+#        pass
 
 main()
